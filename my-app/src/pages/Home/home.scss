@@ -1,0 +1,111 @@
+@import "../../styles/variables";
+
+.app {
+  padding: 20px 0px;
+}
+
+.home__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sidebar {
+  border-radius: 12px;
+  padding: 20px;
+  width: 20%;
+  background-color: #fff;
+}
+.posts {
+  border-radius: 12px;
+  width: 75%;
+
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bg-color;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: inline-block;
+    background-color: #fff;
+    padding: 8px 15px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: $deffault;
+      transition: all 0.2s;
+    }
+
+    &-active {
+      color: $deffault;
+    }
+  }
+  &-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.view-more {
+  text-decoration: underline;
+  text-decoration-color: $deffault;
+  color: $deffault;
+  cursor: pointer;
+}
+.post {
+  width: 24.2%;
+  height: 250px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+
+  &:nth-child(4n){
+    margin-right: 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: 72%;
+
+    img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+  &__title {
+    color: black;
+    margin-top: 12px;
+  }
+  &__info {
+    text-align: left;
+    padding: 5px 5px 0px 5px;
+  }
+  &__info-list {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: gray;
+  }
+  &__views {
+    font-size: 10px;
+  }
+}

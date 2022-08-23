@@ -1,0 +1,42 @@
+@import "src/styles/variables";
+
+.new-post {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+
+  &__image {
+    width: 50%;
+    height: 200px;
+    margin-bottom: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+  &__cancel {
+    margin-left: 20px;
+  }
+}
+
+input[type="file"]{
+  display: none;
+}
+
+.img-uploader {
+  label {
+    padding: 5px 10px;
+    display: inline-block;
+    border: 2px solid $deffault;
+    border-radius: 6px;
+    font-size: 15px;
+    color: gray;
+    cursor: pointer;
+  }
+
+  margin-bottom: 15px;
+}

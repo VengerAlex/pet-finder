@@ -1,0 +1,148 @@
+@import "variables";
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  font-family: 'Roboto';
+  max-width: 1328px;
+  margin: 80px auto 0;
+  padding: 20px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: $deffault;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: darken($deffault, 3%);
+    transition: background-color 0.2s;
+  }
+}
+
+ul {
+  list-style: none;
+}
+li{
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border: none;
+  background-color: $bg-color;
+  padding: 10px 35px 10px 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: $bg-color;
+}
+//
+//.title {
+//  font-weight: 900;
+//  text-transform: uppercase;
+//}
+.scroll-top{
+  width: 50px;
+  background-color: $deffault;
+  height: 50px;
+  border-radius: 100%;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transition: background-color 0.2s;
+    background-color: darken($deffault, 3%);
+  }
+}
+.title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+  user-select: none;
+  margin-bottom: 15px;
+
+  &-btn {
+    padding: 10px;
+    background-color: $bg-color;
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+  }
+  &-content {
+    position: absolute;
+    font-size: 15px;
+    top: 110%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    z-index: 10;
+  }
+  &-item {
+    font-size: 14px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $bg-color;
+      transition: all 250ms;
+    }
+  }
+}
+.arrow {
+  position: absolute;
+  right: 2%;
+  top: 30%;
+  font-size: 20px;
+  transform: rotate(180deg);
+}
+.arrow-active {
+  transform: rotate(0deg);
+}
+.textarea {
+  width: 100%;
+  resize: none;
+  background-color: $bg-color;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  color: gray;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 15px;
+}
